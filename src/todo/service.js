@@ -4,6 +4,9 @@ const Service = (repository, logger) => {
     list() {
       return repository.list();
     },
+    getOne(id) {
+      return repository.getOne(id);
+    },
     add(todo) {
       return repository.add(todo);
     },

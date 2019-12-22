@@ -4,6 +4,9 @@ const Repository = (db, logger) => {
     list() {
       return db.list();
     },
+    getOne(id) {
+      return db.getOne(id);
+    },
     add(todo) {
       return db.add(todo);
     },
