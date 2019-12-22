@@ -25,7 +25,7 @@ const services = {
   userService: userService
 };
 
-configureMiddeware(app);
+configureMiddeware({ app, configuration });
 configureRoutes({ app, services, logger });
 
 app.listen(configuration.PORT, () =>
